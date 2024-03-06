@@ -8,8 +8,11 @@ if (empty($arrayRaw)) {
     return false;
 }
 
+//Convert the given string into a normal array
 $array_clean = str_word_count($arrayRaw, 1, '1234567890');
 echo 'The normal arrray: ';
 print_r($array_clean);
 echo '<br/>The reverse array: ';
+
+//The reverse method
 print_r(array_reverse($array_clean));

@@ -10,7 +10,7 @@ if (empty($stringRaw)) {
 
 $letter_counts = [];
 
-// Remove non-alphabetic characters and convert the string to lowercase
+// Remove non-alphabetic/number characters and convert the string to uppercase
 $cleaned_string = preg_replace('/\s/', '', strtoupper($stringRaw));
 
 // Iterate through each character in the cleaned string

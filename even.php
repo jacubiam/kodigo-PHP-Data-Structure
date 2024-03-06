@@ -8,9 +8,11 @@
         return false;
     }
     
+    //Convert the given string into a normal array
     $array_clean = str_word_count($arrayRaw,1,'1234567890');
 
     $sum = 0;
+    //Check if the n number is a even number
     foreach ($array_clean as $number) {
         if ($number % 2 == 0) {
             $sum += (int) $number;
